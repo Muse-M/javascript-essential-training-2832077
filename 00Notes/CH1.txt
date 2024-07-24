@@ -1,0 +1,46 @@
+    CH 1.01
+JS can on the browser to on servers etc
+JSX is an extention of JS created for React Framework
+
+    CH 1.02
+
+Core= Javascript (AKA Vanilla Javascript)
+    everything else is built upon this vanilla JS
+
+Browser implementation= ECMAScript (not the langauge itself but how the browser interprates the JS)
+                        
+                        ECMAScript (ES) has lots of different versions (ES6 ES2015...ES2020), so in order
+                        for code thats written on the current version to be converted back to what the browser
+                        can read you use Babel.js
+
+Typescript/coffescript = dialect of JS, includes features vanilla JS doesnt have, e.g. stronger typing
+
+JS Framework = tools written in JS to be able to write front end web applications e.g. React/Vue/Angular
+                adds an abstraction layer on vanilla js to make it easier to work on.
+                    e.g React uses JSX which simplifies how you combine JS and HTML
+
+Build tools = automated helper applications: e.g. Babel, npm, webpack...
+
+Node.js = JS server runtime (backend)
+
+    CH 1.03
+Need: Moder browser, Code editor, Live server environment (Live server extention in VScode)
+        browser console
+
+
+    CH 1.04
+install prettier, eslint, node, and 'npm install' to isntall the dependencies
+turn formatonsave on
+
+    CH 1.05
+Console is how you interact with js when the site is running
+
+    CH 1.06
+as always, define everything you're going to use first, i.e varibles, functions
+// for comments, or /**/, or /**Return will create a function description comment block
+Prettier actually does a lot of formatting, e.g. makes every parmater in a function on a new line
+; at the end of all declerations (editor preference)
+
+    CH 1.07
+-----
+
