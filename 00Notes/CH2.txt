@@ -1,0 +1,53 @@
+    CH 2.01
+ways of serving JS in HTML:
+    -inline, as an external file 
+        -using style tags and script tags
+        -usually add JS to the end of the file 
+            - this is because when the code is running if it comes across 
+                the script it will stop everythign and run the script, however
+                if your JS will affect something on the site it needs to be rendered
+                first 
+            -note this is an old method
+
+        <style>
+        main {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+            <script>
+      const allCode = document.querySelectorAll("code");
+
+      for (let item of allCode) {
+        item.innerHTML = `&lt;${item.innerHTML}&gt;`;
+      }
+            </script>
+
+    CH 2.02
+having JS inline at the end of the document only makes sense if you have a small ammount and if it only applies to 1 place
+if it needs to be referenced multiple times in multiple files, then you need to have it in a seperate file and add a refernce to the file 
+
+        refernce via: <script src="script.js"></script>
+
+    CH 2.03
+having JS run after the body is called is not a full fix 
+=> A fix is: async and defer 
+    - usual method is called render blocking 
+    - async: contiues HTML parsing while loading the JS file and stops the HTML when executing the JS 
+    - defer: continues HTML parsing while loading the JS file. But only excutes the JS whne the HTML has finished parsing   
+            <script src="script.js" defer></script>
+    
+    CH 2.04
+you can split up the js file into multiple files and import objects in files you want
+need to place 'export default object' at the end of file and 'import object from "./filename.js";' in the file you are importing into
+
+in the html you will also need:
+    <script type="module" src="backpack.js"></script>       need to refernce both files and label them of type module, i.e. they can refernce eachother 
+    <script type="module" src="script.js"></script>
+
+backpack object cannot be refernced by the console, it is scoped to the script file 
+
+

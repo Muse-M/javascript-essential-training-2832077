@@ -47,4 +47,4 @@ const markup = (backpack) => {
 
 const main = document.createElement("main");
 main.innerHTML = markup(backpack);
-document.body.appendChild(main);
+document.body.appendChild(main); //casuses an error because body element is created after the script is run in thr html
