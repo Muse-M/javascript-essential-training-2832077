@@ -17,10 +17,20 @@ const backpack = {
     right: 26,
   },
   toggleLid: function (lidStatus) {
-    this.lidOpen = lidStatus;
+    this.lidOpen = lidStatus; //this property doesnt exist before it's set, bug?
   },
   newStrapLength: function (lengthLeft, lengthRight) {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
+  },
+
+  changeName: function (newName) {
+    this.name = newName;
+  },
+  changeVolume(newVol) {
+    this.volume = newVol;
+  },
+  changePocketNum(newPockNum) {
+    this.pocketNum = newPockNum;
   },
 };

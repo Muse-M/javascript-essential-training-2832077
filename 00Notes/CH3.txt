@@ -1,0 +1,117 @@
+    CH3.01
+JS is a prototype object language 
+
+objects have properties and methods
+each object is a unique instance of an object protoptype
+    having the same group of properties makes a protoptyp
+    having unique values for those properties makes an instance of the object 
+methods: property changing features, a method acts only on its instance of the object 
+
+objects can hold other objects 
+
+    CH3.02
+const objectinstancename = {
+    key1: value1,
+    key2: value2,
+    method1: function (newValue){
+       this.key1= newValue ;                 //the this keywords is used to specify you are talking about the current object 
+    },
+}; 
+
+    CH3.03
+object are typically constants. while you can change the properties of the object you can't change the object itself
+    => i.e you can change if the backpack is open or closed but can't change the backpack into an apple
+
+    CH3.04
+use camelCase for variable names 
+
+    CH3.05
+you call an object just by using its name, e.g. console.log(backpack)
+
+    CH3.06
+to accsess object properties you can use dot notation or bracket notation
+    - backpack.color
+    - backpack['color'] //usefull for trying to accsess properties that break variable name notation 
+
+    CH3.07: Practice
+    
+    CH3.08
+Everyobject inherits from a JS object called Object, and you can access those properties under [[Protoptype]]
+    e.g. playableCharacter.heath.toString()
+toString is and example of a method accessable by any object which is inhertied from the Object.protoptype object. Can also be used after calling another property (not exactly sure how but cool)
+you can also overwrite the inhertied properties and methods
+
+    CH3.09
+a function in an object in a method 
+
+methods can be defined by 
+    method 1:  function(parameter) {}  or method1(parameter) {}
+method changes only occur in the browser at
+
+
+    CH3.10: Practice
+
+    CH3.11 (folder 03_10)
+object blueprints using Classes
+if you have a group of object you need to declare, setting the property for each individually would be a lot of lines and ineffiecient/reptative
+you can put classes in thier own file, only need to be accsesd my main JS code not the browser
+
+a better method is using classes that act like blueprints/templates for an object
+to make a class: 
+
+        class backpack {
+            constructor(
+                parmeter1,
+                parameter2
+            )
+            {
+            this.property1=parameter1,
+            this.property2=parameter2
+            },
+            method1: function(newProperty2Value){
+                this.property2=newProperty2Value
+            },
+        };
+
+to call a class:
+
+        const everydayPack = new Backpack(
+            'parameter1',
+            'parameter2'
+        ) 
+        const longTripPack = new Backpack(
+            'differentParameter1',
+            'differentParameter2'
+        )
+
+    CH3.12
+you can create object templates using just functions without using classes
+the difference between this way of seeting t up and classes is the methods live inside the constructor function (first set of curly bracket) where as with classes 
+    they stay outside
+
+
+    CH3.13
+you can create a new class based on an existing class and the new class 
+will inherit the properties and methods of the old, you can then add new properties 
+or methods
+
+to create the new class:
+
+    class HikingBackpack extends Backpack{
+    constructor(
+        oldparameter 
+        oldparameter1
+        newparamatervalue){
+            //initialise the old paramters
+            super(oldparameter, oldparameter1)
+            //initialise new parameter like usual 
+            this.newparmater=newparamatervalue
+        }
+    }
+
+    CH3.14 -Practice
+
+    CH3.15 (code in ch3.13 file)
+Global Objects, built in objects that already exist, e.g. Date()
+
+    CH3.16 - code challenge 

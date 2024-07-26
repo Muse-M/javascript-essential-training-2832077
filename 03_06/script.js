@@ -22,3 +22,5 @@ const backpack = {
 };
 
 console.log("The backpack object:", backpack);
+console.log(backpack.color);
+console.log(backpack['color']);
