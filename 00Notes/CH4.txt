@@ -1,0 +1,25 @@
+    4.01
+How to output onto the html docs
+JS adds/modifies/removes html from exsiting live document
+The entire document is an OBJECT in the broweser 
+    The html renders the document object and you can use JS 
+        to accsess that object 
+
+accses the body in console using document.body
+accses the text by using document.body.innerHTML
+
+use `` to make Template_literals. With this you can mix 
+text and JS expression. 
+    Add JS expressions by using ${} and refrencing the value in the brakets 
+
+    4.02
+to add JS in HTML using strings and not Template_literals,
+    you use string concatination
+        "<h1>" + everydayPack.name + "</h1>"
+
+    4.03 - in web challange
+
+
+
+
+
