@@ -1,0 +1,41 @@
+    5.01
+HTML creates Documnet Object Model(DOM) which creates a tree structure for different nested items in document 
+
+
+    5.02- How to accses items in DOM
+to do something with DOM first find elements by using querySelector or querySelectorAll
+    they take CSS queries as parameters 
+
+    e.g. document.querySelector("main") or document.querySelector(".maincontent") // 2nd method uses the class name rather than object name
+         document.querySelector("header")
+
+         document.querySelectorAll("main li") returns a node list 
+
+    5.03 (old) other ways of accsessing elements
+.getElementById() -
+.getElementsByClassName() -  returns an HTML collection of space seperated items
+
+    5.04 - Practice
+
+
+    5.05
+.className returns the name of the key which references a specific value
+    e.g. document.querySelector("h1").className returns "backPack_name" the name of the class which is being displayed in the heading 
+
+in JS frameworks like react, className is a specific property as such it can't be used in the way above  
+
+what you should uses is .classList 
+    This returns a DOM Token List of all the classes assigned to a specific property, it also comes with add, remove, toggle methods which you can use to add, remove or toggle classes
+
+
+    5.06 
+.attributes returns a named node map, attributes are stuf like src, alt in the img tag, everything in a tag is an attribute, so tecnically can use this to manipuate classes
+
+    .attributes come with thier own methods, e.g 
+                                                    document.querySelector("img").hasAtrtribute("src")
+    
+    5.07
+.style returns the inline css parameter declerations, can set them here in Js, e.g. document.querySelector(".site_title").style.color = "pink"
+
+
+
