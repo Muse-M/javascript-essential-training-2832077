@@ -38,4 +38,60 @@ what you should uses is .classList
 .style returns the inline css parameter declerations, can set them here in Js, e.g. document.querySelector(".site_title").style.color = "pink"
 
 
+    5.08 - Practice
+
+to do- find elements and add 2 different classes 
+        remove one of the classes 
+        add new attribute to element
+            request value 
+            change value 
+        add inlines CSS
+        Query style attribute to get full list of style attributes  
+
+        - history of attempts in /practice/05_08
+
+        
+    5.09 - better way of injecting HTML, last way of using innerHTML to re-set everything in an element removes anything that was there before
+
+what you should do is first add a new DOM element (empty box) after the already existing elements and then populate the new DOM Element 
+
+    content = //template literal here
+    const newArticle = document.createElement("article" ) //creates article element
+    newArticle.innerHTML(content) //populate
+    
+    const main = document.querySelector(".maincontent")
+    main.append(newArticle) // append new article element to end of parent node  i.e. main, to add at start use .prepend
+
+//bunch of other useful methods to specify where to add to HTML, most useful: Targetelement.insertAdjacentElement(position, element), 
+// insert elemnt beforebegin or afterbegin or beforened or afterend of target element
+
+
+// JavaScript code​​​​​​‌​‌‌‌​​​‌​​‌​​‌​‌​‌​‌​‌‌​ below
+// Change these values to control whether you see 
+// the expected answer and/or hints.
+const showExpectedResult = false
+const showHints = false
+
+// Setup data
+const navContent = `
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Backpacks</a></li>
+      <li><a href="#">Other things</a></li>
+      <li><a href="#">Contact</a></li>
+`;
+
+
+function createNavMenu(document) {
+      // Your code goes here
+      const newNav= document.createElement("nav")
+      const newUL= document.createElement("ul")
+      newUL.innerHTML= navContent
+      newNav.append(newUL)
+      newNav.classList.add("main-naviagtion")
+      
+      const header= document.querySelector(".siteheader") 
+      header.append(newNav)
+}
+
 

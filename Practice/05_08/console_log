@@ -1,0 +1,42 @@
+document.querySelectorAll(".backpack")[1].classList.add("newClass1")
+undefined
+document.querySelectorAll(".backpack")[1].classList
+DOMTokenList(2) ['backpack', 'newClass1', value: 'backpack newClass1']
+document.querySelectorAll(".backpack")[1].classList.add("newClass2", "newclass3")
+undefined
+document.querySelectorAll(".backpack")[1].classList.remove("newClass3")
+undefined
+document.querySelectorAll(".backpack")[1].classList.remove("newClass3")
+undefined
+document.querySelectorAll(".backpack")[1].classList
+DOMTokenList(4) ['backpack', 'newClass1', 'newClass2', 'newclass3', value: 'backpack newClass1 newClass2 newclass3']
+document.querySelectorAll(".backpack")[1].classList.remove("newClass3")
+undefined
+document.querySelectorAll(".backpack")[1].classList.remove(".newClass3")
+undefined
+document.querySelectorAll(".backpack")[1].classList.remove("newclass3")
+undefined
+document.querySelectorAll(".backpack")[1].classList
+DOMTokenList(3) ['backpack', 'newClass1', 'newClass2', value: 'backpack newClass1 newClass2']
+document.querySelectorAll(".backpack")[1].setAttribute("test")
+VM898:1 Uncaught TypeError: Failed to execute 'setAttribute' on 'Element': 2 arguments required, but only 1 present.
+    at <anonymous>:1:43
+(anonymous) @ VM898:1
+document.querySelectorAll(".backpack")[1].setAttribute("test", 1)
+undefined
+document.querySelectorAll(".backpack")[1].attributes
+NamedNodeMap {0: class, 1: id, 2: test, class: class, id: id, test: test, length: 3}
+document.querySelectorAll(".backpack")[1].getAttribute("test")
+'1'
+document.querySelectorAll(".backpack")[1].getAttribute("test")=2
+VM1007:1 Uncaught ReferenceError: Invalid left-hand side in assignment
+    at <anonymous>:1:43
+(anonymous) @ VM1007:1
+document.querySelectorAll(".backpack")[1].setAttribute("test", 2)
+undefined
+document.querySelectorAll(".backpack")[1].getAttribute("test")
+'2'
+document.querySelectorAll(".backpack")[1].style.color= "red"
+'red'
+document.querySelectorAll(".backpack")[1].style
+CSSStyleDeclaration {0: 'color', accentColor: '', additiveSymbols: '', alignContent: '', alignItems: '', alignSelf: '', …}
