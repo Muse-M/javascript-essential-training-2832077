@@ -1,0 +1,14 @@
+    6.01
+Variables store stuff, stuff can be single items, lists, objects, other variables 
+
+    6.02
+use var to create mutable variables, this is the default if you don't decleare the varaible 
+you can declare multiple variables at the same time, 
+    var= x=4, y=5, color="red"
+    var empty // declared but undefined 
+    
+    6.03
+var variables are globaly scoped, can be accssed from anywhere in the code, can cause problems with functions etc 
+
+
+
