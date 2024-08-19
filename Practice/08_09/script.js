@@ -57,3 +57,24 @@ const content = `
       }</span></li>
     </ul>  
 `;
+
+let articleElement = function (html) {
+  let newArticle = document.createElement("article");
+  newArticle.innerHTML = html;
+  return newArticle;
+};
+
+let imageCaptioner = function (caption) {
+  let figure = document.createElement("figure");
+  let image = document.createElement("img");
+  image.setAttribute("src", frogpack.image);
+  let captionElement = document.createElement("figurecaption");
+  captionElement.innerHTML = caption;
+  figure.append(image);
+  figure.append(captionElement);
+  return figure;
+};
+
+let main = document.querySelector("main");
+main.append(articleElement(content));
+main.append(imageCaptioner("This is a Caption!"));
