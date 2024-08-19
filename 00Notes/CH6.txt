@@ -10,5 +10,33 @@ you can declare multiple variables at the same time,
     6.03
 var variables are globaly scoped, can be accssed from anywhere in the code, can cause problems with functions etc 
 
+    6.04
+Let is locally scoped in the block it is declared in 
+Variable names can repeat beacause again, only exists inside the block
+    Just use let always 
+    
+    6.05
+Const creates a locally scoped immutable variable 
 
+    6.06
+JS is a weakly typed language, the type of the variable isn't strictly defined and can change (purposfully or accdentally thought the script)
+    solution- TypeScript (strongly typed version of JS)-> which gets complied into JS before being run 
+            - or create an assertType function to test variables before using them 
+
+
+types: null, undefined, array, object, string, integer, floating point, boolean
+can leave something undefined or set it to undefined specifically 
+
+typeof(variable) to find variable typed
+
+    
+    6.07
+= is an assignment 
+== loose comparision (must be of the same value)
+=== absoloute comparision (must be of the same type and value)
+
+    6.08
++, -, *, /, **, %, do their usuall things
+--a,++a: decrement and increament then save to a 
+a++, a--, display a then decrement and increament to be 1 more or 1 less the next time it used 
 
