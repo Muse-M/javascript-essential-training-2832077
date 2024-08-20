@@ -1,0 +1,14 @@
+    9.2
+everything that happens in the browser is an event, you listen for events and trigger stuff to happen 
+
+element.addEventListener(event, () => {
+    action
+}, boolean?)
+
+
+    9.3
+boolean is often set to false => advanced 
+
+
+
+

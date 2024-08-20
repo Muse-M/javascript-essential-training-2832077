@@ -1,0 +1,11 @@
+    8.15
+for ... of : used to loop over items in array 
+arrray.forEach(item) => {} : used to loop over items in array
+
+for ... in : used to loop over objects 
+
+
+    8.16
+.map() method takes existing array, performs some action on each item and returns the results in a new array
+
+
